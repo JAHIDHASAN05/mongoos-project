@@ -12,18 +12,21 @@ async function main() {
     try{
 
         await mongoose.connect(config.database_url as string);  
-        app.listen(config.port, () => {
-          console.log(`Example app listening on port ${config.port}`)
-        })
+        app.listen(3000, () => {
+            console.log(`Exampghsd===n port ${3000}`)
+          })
+        
 
     }catch(err){
         console.log(
-            err
+           'jahid ha' +err
         );
     }
 
 }
 
+
+// main()
 
 
 

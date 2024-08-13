@@ -9,14 +9,14 @@ import {
 const userNameSchema = new Schema<IUserName>({
   firstName: {
     type: String,
-    required: true,
+    // required: true,
   },
   midlleName: {
     type: String,
   },
   lastName: {
     type: String,
-    required: true,
+    // required: true,
   },
 });
 
@@ -29,14 +29,14 @@ const guardianSchema = new Schema<IGuardian>({
   },
   fatherContackNo: {
     type: String,
-    required: true,
+    // required: true,
   },
   motherName: {
     type: String,
   },
   motherContackNo: {
     type: String,
-    required: true,
+    // required: true,
   },
   motherOcupation: {
     type: String,
@@ -46,15 +46,15 @@ const guardianSchema = new Schema<IGuardian>({
 const localGuardianSchema = new Schema<ILocalGuardian>({
   name: {
     type: String,
-    required: true,
+    // required: true,
   },
   contackNo: {
     type: String,
-    required: true,
+    // required: true,
   },
   address: {
     type: String,
-    required: true,
+    // required: true,
   },
   ocupation: {
     type: String,
@@ -66,11 +66,11 @@ const studentSchema = new Schema<IStudent>({
   name: userNameSchema,
   gender: ["female", "male"],
   dateOfBirth: {type: String,},
-  email: {type: String,   required: true, },
+  // email: {type: String,   required: true, },
   bloodGroup: {type: String},
   contackNo: {
     type: String,
-    required: true,
+    // required: true,
   },
   emergencyContack: {
     type: String,
@@ -88,4 +88,4 @@ const studentSchema = new Schema<IStudent>({
 
 
 
-const Student = model<IStudent>('Student', studentSchema)
+export const StudentModel = model<IStudent>('Student', studentSchema)
